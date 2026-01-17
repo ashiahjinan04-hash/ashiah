@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 80px; /* reduced height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin-left: 36px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.logo {
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  padding: 64px 80px 100px; /* reduced top space */
+  align-items: center;
+}
+
+.hero h2 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #555;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 28px;
+  border: 1px solid #111;
+  text-decoration: none;
+  margin-right: 12px;
+  color: #111;
+}
+
+.primary {
+  background: #111;
+  color: #fff;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 80px;
+}
+
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: #eaeaea;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 420px; /* hard limit image column */
+  gap: 64px;
+  align-items: center;
+}
+
+/* image wrapper */
+.about-visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* fixed-size container */
+.about-image-frame {
+  width: 360px;
+  height: 240px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f5f5f5;
+  border: 1px solid #eaeaea;
+}
+
+/* ensure image never overflows */
+.about-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SKILLS */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.skill {
+  padding: 16px;
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* PROJECT */
+/* PROJECT LAYOUT */
+.project-card.refined {
+  display: grid;
+  grid-template-columns: 380px 1fr; /* smaller image column */
+  gap: 64px;
+  align-items: center;
+}
+
+/* image container */
+.project-image {
+  display: flex;
+  justify-content: center;
+}
+
+.project-image-frame {
+  width: 320px;     /* smaller width */
+  height: 400px;    /* controlled height */
+  border-radius: 18px;
+  overflow: hidden;
+  background: #111; /* helps dark images feel crisp */
+}
+
+/* image behavior */
+.project-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.project-image img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.project-content p {
+  color: #555;
+}
+.project-content h4 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 520px;
+}
+
+.project-content .tools {
+  font-size: 14px;
+  color: #777;
+  margin: 16px 0 24px;
+}
+
+.project-link {
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1px solid #111;
+  padding-bottom: 4px;
+}
+
+
+.tools {
+  font-size: 14px;
+  color: #777;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
+
+footer {
+  padding: 40px 80px;
+  font-size: 14px;
+  color: #777;
+}
+/* SECTION BACKGROUNDS */
+.soft-bg {
+  background: #fafafa;
+}
+
+.subtle-bg {
+  background: #f3f3f3;
+}
+
+/* Improve contrast inside colored sections */
+.soft-bg h3,
+.subtle-bg h3 {
+  margin-top: 0;
+}
+
+/* CONTACT ENHANCEMENT */
+.contact {
+  padding: 140px 80px;
+}
+
+.contact p {
+  max-width: 480px;
+  margin: 20px auto 40px;
+  color: #555;
+}
+
+/* Button refinement for light backgrounds */
+.subtle-bg .btn.primary {
+  background: #111;
+  color: #fff;
+}
+.about h3 {
+  font-size: 34px;
+}
+
+.about p {
+  font-size: 18px;
+  max-width: 540px;
+}
+.about-image-frame {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
